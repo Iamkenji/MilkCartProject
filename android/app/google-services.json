@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "443578174398",
+    "project_id": "milkkart-26178",
+    "storage_bucket": "milkkart-26178.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443578174398:android:0ab89e93efbe559974c7ef",
+        "android_client_info": {
+          "package_name": "com.example.milkmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJgq1giUtHgt8IKiXbFQteyCls28Mz2Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
