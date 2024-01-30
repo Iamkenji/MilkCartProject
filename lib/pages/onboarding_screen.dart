@@ -35,7 +35,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 onLastPage = (index == 1);
               });
             },
-            children: [
+            children: const [
               IntroPage1(),
               IntroPage2(),
             ],
@@ -48,7 +48,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
        //dot indicators
        Container(
-        alignment: Alignment(0,0.75),
+        alignment: const Alignment(0,0.75),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -59,7 +59,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               onTap: () {
                 _controller.jumpToPage(1);
               },
-              child: Text(
+              child: const Text(
                 'Skip',
               style: TextStyle(
               color: Color.fromARGB(255, 53, 34, 43),
@@ -78,12 +78,12 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               onTap: () {
                 Navigator.push(context,
                  MaterialPageRoute(builder: (context) {
-                  return AuthPage();
+                  return const AuthPage();
                  },
                  ),
                  );
               },
-              child: Text(
+              child: const Text(
                 'Done',
               style: TextStyle(
               color: Color.fromARGB(255, 53, 34, 43),
@@ -94,11 +94,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             )
             : GestureDetector(
               onTap: () {
-                _controller.nextPage(duration: Duration(milliseconds: 500), 
+                _controller.nextPage(duration: const Duration(milliseconds: 500), 
                 curve: Curves.easeIn,
                 );
               },
-              child: Text(
+              child: const Text(
                 'Next',
               style: TextStyle(
               color: Color.fromARGB(255, 53, 34, 43),

@@ -3,8 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:milkmart/components/product_tile.dart';
 import 'package:milkmart/models/cat.dart';
 import 'package:milkmart/models/product.dart';
+//import 'package:milkmart/pages/cat_page.dart';
 import 'package:milkmart/pages/food_details_page.dart';
 import '../components/cat_tile.dart';
+import 'package:milkmart/components/my_drawer.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -12,6 +14,8 @@ class MainPage extends StatefulWidget {
   void signUserOut() {
     FirebaseAuth.instance.signOut();
   }
+
+
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -68,22 +72,10 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Icon(
-          Icons.menu,
-          color: Color.fromARGB(255, 53, 34, 43),
-        ),
-        title: Row(
-            
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(32.0),
-                child: Image.asset('lib/images/milkkartlogo2.png',
-                fit: BoxFit.contain,
-                height:35),
-              ),
-            ],
-          ), 
+        foregroundColor: Color.fromARGB(255, 63, 38, 38),
+        title: const Text("MilkMart"),
       ),
+      drawer: MyDrawer(),
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
